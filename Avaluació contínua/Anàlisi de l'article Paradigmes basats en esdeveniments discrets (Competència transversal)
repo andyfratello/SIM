@@ -1,0 +1,27 @@
+Cal que llegiu l'article que trobareu adjuntat en aquesta activitat, i ens feu arribar les vostres conclusions de l'article al respecte del Process Interaction, Activity Scanning, Discret Event Scheduling, responent en format de text lliure a les següents preguntes.
+
+quin dels tres paradigmes utilitzaries per a realitzar un estudi de simulació continua si no disposes d'un simulador continuu, justifica la resposta.
+quin dels tres paradigmes creus que té menys complexitat per a desenvolupar?
+
+Resposta:
+• quin dels tres paradigmes utilitzaries per a realitzar un estudi de simulació continua si no disposes d'un simulador continuu, justifica la resposta.
+
+Si no es disposa d'un simulador continu, no es podria utilitzar el Process Interaction paradigm per l’estudi de simulació. Aquest paradigma es basa en el supòsit que el sistema que s'està simulant és continu, per la qual cosa no seria aplicable si no es disposa d'un simulador continu.
+
+El Activity Scanning paradigm i el Discrete Event Scheduling paradigm són adequats per realitzar estudis de simulació quan no es disposa d'un simulador continu.
+
+El Activity Scanning paradigm implica dividir el temps en intervals discrets i, a cada interval, l'estat del sistema s'actualitza en funció de les activitats que s'estan programant durant aquest interval. Aquest paradigma s'utilitza sovint per simular sistemes que tenen una barreja de comportament continu i discret.
+
+El Discrete Event Scheduling paradigm implica representar els esdeveniments que es produeixen al sistema com a "missatges" discrets que es transmeten entre components del sistema. El motor de simulació fa un seguiment dels esdeveniments que estan programats per passar en el futur i avança el temps de simulació al següent esdeveniment programat sempre que es produeixi. Aquest paradigma s'utilitza sovint per simular sistemes amb un alt grau de concurrència o paral·lelisme.
+
+En definitiva, l'elecció de quin paradigma utilitzar per a l’estudi de simulació dependrà de les característiques del sistema que s’està simulant i dels objectius del estudi.
+
+• quin dels tres paradigmes creus que té menys complexitat per a desenvolupar?
+
+La complexitat d'un model de simulació pot dependre de diversos factors, com ara la mida i complexitat del sistema que es simula, el nivell de detall i fidelitat. requerits en el model, i l'experiència i habilitats del modelador.
+
+No obstant això, en general, el Discrete Event Scheduling paradigm tendeix a tenir una complexitat menor que els altres dos paradigmes, ja que implica modelar el sistema com un conjunt d'esdeveniments discrets que ocorren en moments específics del temps, en lloc de modelar els processos o activitats dins del sistema en detall. Això pot facilitar el desenvolupament i el manteniment del model de simulació, ja que hi ha menys components per fer un seguiment.
+
+El Process Interaction paradigm tendeix a tenir una complexitat més gran que el Discrete Event Scheduling paradigm, ja que implica modelar el sistema com un conjunt de processos interactius, cadascun amb el seu propi comportament i interaccions amb altres processos. Això pot requerir un modelatge més detallat i pot ser més difícil d'implementar i depurar.
+
+El Activity Scanning paradigm tendeix a tenir una complexitat intermèdia, ja que implica modelar el sistema com un conjunt d'activitats que es realitzen en un ordre predeterminat, amb cada activitat que triga un cert temps a completar-se. Això pot requerir un modelatge detallat de les activitats i les seves dependències, però normalment no implica el mateix nivell de complexitat que el paradigma d'interacció de processos.
